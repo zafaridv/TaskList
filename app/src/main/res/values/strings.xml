@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Task List</string>
+
+    <string name="all">All</string>
+    <string name="done">Done</string>
+    <string name="onProgress">In Progress</string>
+
+    <string name="noTask">No Task!</string>
+
+    <string name="name">Task Name</string>
+    <string name="deadline">Deadline</string>
+    <string name="nameIsRequired">Task Name is required</string>
+    <string name="delete">Delete</string>
+    <string name="areSureToDelete">Are you sure to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="status">Task Status</string>
+    <string name="pressBackExit">Press back again to Exit</string>
+
+
+
+    <!--transition names-->
+    <string name="taskFormCardView">TaskFormCardView</string>
+
+
+    <!--content description-->
+    <string name="close_new_task_content_desc">Close New Task</string>
+</resources>

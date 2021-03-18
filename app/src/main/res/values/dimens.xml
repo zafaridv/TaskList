@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pagePadding">16dp</dimen>
+    <dimen name="pageTitleSize">20sp</dimen>
+
+    <dimen name="min_touch_target_size">48dp</dimen>
+    <dimen name="min_icon_target_padding">12dp</dimen>
+    <dimen name="bottomNavBarHeight">56dp</dimen>
+    <dimen name="topBarHeight">70dp</dimen>
+
+
+    <dimen name="listItemIconSize">40dp</dimen>
+    <dimen name="listItemPadding">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+</resources>

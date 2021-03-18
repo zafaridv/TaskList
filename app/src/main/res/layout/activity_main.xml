@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/myNavHostFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+    <!--android:name="androidx.navigation.fragment.NavHostFragment"
+    app:navGraph="@navigation/navigation"
+    app:defaultNavHost="true"-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBar"
+        android:paddingTop="@dimen/pagePadding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBarHeight"
+        android:background="@color/primaryLight"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/pagePadding"
+        android:layout_marginEnd="@dimen/pagePadding"
+        android:textStyle="bold"
+        android:textSize="@dimen/pageTitleSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fab"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:fabSize="mini"
+        android:layout_marginEnd="@dimen/pagePadding"
+        android:src="@drawable/ic_add_32"
+        app:tint="@color/white"
+        android:transitionName="newTaskTransition"
+        app:layout_constraintTop_toTopOf="@id/pageTitle"
+        app:layout_constraintBottom_toBottomOf="@id/pageTitle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomNavBarHeight"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
